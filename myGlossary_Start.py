@@ -6,13 +6,16 @@ from tkinter import *
 def click():
     entered_text = entry.get()
     output.delete(0.0, END)
-    definition = my_glossary[entered_text]
+    try:
+        definition = my_glossary[entered_text]
+    except:
+        definition = "Can't find out definition"
     output.insert(END, definition)
 
 ### main
 window = Tk()
 window.title("My Coding Club Glossary")
-window.geometry("640x480")
+#window.geometry("640x480")
 
 # Label
 Label(window, text="Please enter your searching word:").grid(row=0, column=0, sticky=W)
