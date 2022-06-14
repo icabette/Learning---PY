@@ -3,7 +3,7 @@ from turtle import bgcolor
 
 canvas_height = 400
 canvas_width = 600
-canvas_colour = "black"
+canvas_colour = "white"
 
 p1_x = canvas_width/2
 p1_y = canvas_height
