@@ -2,7 +2,7 @@ from pickle import TRUE
 from socket import *
 
 clientSock = socket(AF_INET, SOCK_STREAM)
-clientSock.connect(('icabette.iptime.org', 7979))
+clientSock.connect(('192.168.100.62', 7979))
 
 print('연결 확인 됐습니다.')
 
